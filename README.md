@@ -8,7 +8,7 @@ gan-notebook.ipynb is identical to the interactive tutorial, available here so t
 gan-script.py is a straightforward Python script containing code drawn directly from the tutorial, to be run from the command line. Note that it doesn't print anything when it's executed, but it does send regular updates to TensorBoard so that you can track its progress.
 gan-script-fast.py is a modest refactoring of gan-script.py that runs slightly faster because more of its computations are contained in the TensorFlow graph.
 Requirements and installation
-In order to run gan-script.py or gan-script-fast.py, you'll need TensorFlow version 1.0 or later and NumPy. In order to run gan-notebook.ipynb, you'll additionally need Jupyter and matplotlib.
+In order to run gan-script.py or gan-script-fast.py,asdasd you'll need TensorFlow version 1.0 or later and NumPy. In order to run gan-notebook.ipynb, you'll additionally need Jupyter and matplotlib.
 
 If you've already got TensorFlow on your machine, then you've got NumPy and should be able to run the raw Python scripts.
 
