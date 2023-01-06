@@ -3,7 +3,7 @@ GAN segmentation gun person
 This repository contains code to accompany the O'Reilly tutorial on generative adversarial networks written by Jon Bruner and Adit Deshpande. See the original tutorial to run this code in a pre-built environment on O'Reilly's servers with cell-by-cell guidance, or run these files on your own machine.
 
 There are three versions of our simple GAN model in this repository:
-
+asd
 gan-notebook.ipynb is identical to the interactive tutorial, available here so that you can run it on your own machine.
 gan-script.py is a straightforward Python script containing code drawn directly from the tutorial, to be run from the command line. Note that it doesn't print anything when it's executed, but it does send regular updates to TensorBoard so that you can track its progress.
 gan-script-fast.py is a modest refactoring of gan-script.py that runs slightly faster because more of its computations are contained in the TensorFlow graph.
