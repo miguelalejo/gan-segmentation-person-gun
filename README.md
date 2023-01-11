@@ -1,4 +1,12 @@
-4.4.7.	Red de segmentación GAN 
+#	Organización de proyecto y licenciamiento
+El proyecto tiene una licencia MIT License Open Source, en donde se proporciona el código en las versiones liberas y modificadas en el reportorio GIT, tal como está, en donde expresamente no existe responsabilidad por daños y perjuicios. Esta es una licencia de código abierto, que permite a cualquiera tener la libertad de usar el código y mejorarlo. 
+El repositorio de código fuente se encuentra en la siguiente URL:
+ 	gan-segmentation-person-gun
+data: Ruta donde se encuentran las diferentes imágenes procesadas utilizadas como recursos para el entrenamiento de los modelos basados en redes generativas.
+model: Ruta donde se encuentran los diferentes notebooks, utilizados para la generación de modelos utilizados tanto para la detección de objetos y la segmentación de imágenes.
+
+
+#	Red de segmentación GAN 
 
 A continuación, se realiza una descripción de lo modelo de segmentación mediante el uso de redes antagónicas, en donde se hace uso de las imágenes generadas en los apartados anteriores. El entorno de trabajo es Google Colaborador en su versión Pro+, adicionalmente se utilizo 
 Para esta tarea se realizó el siguiente notebook que se encuentran en el repositorio Git:
