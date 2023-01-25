@@ -103,7 +103,7 @@ El proceso es el siguiente:
 ## Resultados Métricas:	 
 ![](resources/metrcis.jpg)	
 
-## Evaluación general del modelo:
+### Evaluación general del modelo:
 
 La interpretación de los registros es más compleja y abstracta cuando se entrena una GAN (o una cGAN como pix2pix) respecto de otros modelos como clasificación o regresión. Debido a que se busca el equilibrio en la red según la teoría de Nashm se puede comprobar que ni el generador ni el discriminador han "ganado".
 -	Debido a que gen_gan_loss o disc_loss son muy altos, es un indicador que el modelo combinado está entrenando correctamente.
@@ -112,17 +112,17 @@ La interpretación de los registros es más compleja y abstracta cuando se entre
 -	Para gen_gan_loss, un valor por debajo de 0,47 significa que el generador lo está haciendo mejor que el azar para engañar al discriminador.
 -	A medida que avanza el entrenamiento, gen_l1_loss sigue disminuyendo. Luego la pérdida L1, también conocida como pérdida de error absoluta, que es la diferencia absoluta entre una predicción y el valor real. La pérdida L1 es un cálculo de error para cada ejemplo en el que queremos comprender qué tan bien predijimos para esa observación; luego un L1 que disminuye y tiende a cero es un buen indicador.
 Otras métricas:
-## Inception Score
----
+### Inception Score
+
 Esta puntuación es una medida de cuán realista es la salida de una GAN. En palabras de sus autores, “encontramos que [el IS] se correlaciona bien con la evaluación humana [de la calidad de la imagen]”. Es una alternativa automática a que los humanos califiquen la calidad de las imágenes. Inception Score mide dos cosas simultáneamente:
 -	Las imágenes tienen variedad (por ejemplo, cada imagen es una raza de perro diferente)
 -	Cada imagen claramente se parece a algo diferente.
 Si ambas cosas son ciertas, la puntuación será alta. Si uno o ambos son falsos, la puntuación será baja. Una puntuación más alta es mejor. Significa que su GAN puede generar muchas imágenes distintas diferentes. El IS ha demostrado ser útil y popular, aunque tiene limitaciones. El resultado de esta métrica es 1.0164841, ya que el modelo en realidad muestra una sola persona. 
-## Intersection over Union
----
+### Intersection over Union
+
 Esta métrica es muchas más interesante, también conocido como Índice Jaccard, es una de las métricas más utilizadas en la segmentación semántica. El IoU es el área de superposición entre la segmentación predicha y la verdadera. Esta métrica varía de 0 a 1 (0 a 100 %), donde 0 significa que no hay superposición y 1 significa una segmentación perfectamente superpuesta. Como se puede ver la métrica tiene un valor de 0.9043723442467624, lo que indica que el modelo está generando máscaras de segmentos muy parecido a la imagen original.
-## Dice
----
+### Dice
+
 El índice de Dice es muy similar al índice de Jaccard, ya que mide la similitud y diversidad de conjuntos de muestras. Aunque se calculan de manera similar, el índice de Dice es un poco más intuitivo porque se puede ver como el porcentaje de superposición entre dos conjuntos, que es un valor entre 0 y 1. Para este trabajo el índice es de 0.9397999999999994 por tanto se están solapando las imágenes real y predicha.
 Finalmente se puede ver los resultados de otras pruebas en 8.7 Otras pruebas, de los Anexos, y en el repositorio de github en el siguiente enlace.
 El resultado final de los pesos del modelo de segmentación de peronas con armas pre-entrenado es de 654MB.
