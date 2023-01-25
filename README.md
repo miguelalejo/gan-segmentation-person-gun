@@ -97,11 +97,11 @@ El proceso es el siguiente:
 
  
 ## Algunos resultados son:
-![](resources\resultsepocs.jpg)	
+![](resources/resultsepocs.jpg)	
  	 
   
 ## Resultados Métricas:	 
-![](resources\metrcis.jpg)	
+![](resources/metrcis.jpg)	
 
 ## Evaluación general del modelo:
 ---
