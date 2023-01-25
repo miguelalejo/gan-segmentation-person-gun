@@ -9,6 +9,14 @@ El repositorio de código fuente se encuentra distribuido de la siguiente manera
 * aplications: Tiene notebooks utilizados para realizar el procesamiento de videos.
 * resources: Tiene los recursos utilizados para el desarrollo del proyecto incluye el documento formal TFM, donde se explican los diferentes modelos y el trabajo.
 
+# Pesos modelos
+Los resultados de los modelos pre entrenados se encuentran en la siguiente carpeta en drive:
+- <img  width="20" 
+     height="20" src="https://camo.githubusercontent.com/78970772c54aad16d3d5ec6f8ba3ba5e2f5c238ca1940345b44a78b97e6235df/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f676f6f676c655f64726976652e737667" /> [Results](https://drive.google.com/drive/folders/1RekHxL9v9QGNf-nhoXx1jwbt7I99afq5)
+
+
+
+
 
 # Ejemplo:
 ![](resources/AnimatedExample.gif)
