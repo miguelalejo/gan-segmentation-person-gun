@@ -11,7 +11,7 @@ El repositorio de código fuente se encuentra distribuido de la siguiente manera
 
 
 # Ejemplo:
-![](resources\AnimatedExample.gif)
+![](resources/AnimatedExample.gif)
 #	Red de segmentación GAN 
 
 A continuación, se realiza una descripción de lo modelo de segmentación mediante el uso de redes antagónicas, en donde se hace uso de las imágenes generadas en los apartados anteriores. El entorno de trabajo es Google Colaborador en su versión Pro+, adicionalmente se utilizo 
