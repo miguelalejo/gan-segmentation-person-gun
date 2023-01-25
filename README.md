@@ -126,3 +126,9 @@ Esta métrica es muchas más interesante, también conocido como Índice Jaccard
 El índice de Dice es muy similar al índice de Jaccard, ya que mide la similitud y diversidad de conjuntos de muestras. Aunque se calculan de manera similar, el índice de Dice es un poco más intuitivo porque se puede ver como el porcentaje de superposición entre dos conjuntos, que es un valor entre 0 y 1. Para este trabajo el índice es de 0.9397999999999994 por tanto se están solapando las imágenes real y predicha.
 Finalmente se puede ver los resultados de otras pruebas en 8.7 Otras pruebas, de los Anexos, y en el repositorio de github en el siguiente enlace.
 El resultado final de los pesos del modelo de segmentación de peronas con armas pre-entrenado es de 654MB.
+
+# Resultados
+
+La siguiente tabla presenta una comparación de las métricas de este apartado y el anterior en relación con el conjunto de datos COCO.
+
+![](resources/tabla.jpg)	
