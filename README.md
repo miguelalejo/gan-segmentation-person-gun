@@ -46,7 +46,7 @@ Respeto de las tareas de procesamiento se aplica rotaciones y reflejos aleatorio
  
 
 ## GENERADOR
----
+
 El generador de la red pix2pix cGAN es una red U-Net modificada. Una U-Net consta de un codificador (disminución de muestreo) y un decodificador (disminución de muestreo). En donde cada bloque del codificador está formado por: Convolution -> Batch normalization -> Leaky ReLU. Cada bloque en el decodificador es: Transposed convolution -> Batch normalization -> Dropout (aplicado a los 3 primero bloques) -> ReLU. Existen conexiones de salto entre el codificador y el decodificador. Se puede ver la definición de esta arquitectura detallada en, el anexo 8.5 Arquitectura Generador; sin embargo, el proceso que sigue en generador es el que se muestra en la siguiente figura:
  
 Podemos visualizar un ejemplo del generador para un tensor con la forma: TensorShape([1, 256, 256, 3])
@@ -59,7 +59,7 @@ Las cGAN aprenden de una pérdida que penaliza una posible estructura que difier
 -	L1, es una pérdida que mide el MAE (error absoluto medio) entre la imagen generada y la imagen de destino. Esto permite que la imagen generada se vuelva estructuralmente similar a la imagen de destino.
 La fórmula para calcular la pérdida total del generador es la suma de la perdida de la red GAN(gan_loss) + LAMBDA * l1_loss, donde LAMBDA = 100.
 ## DISCRIMINADOR
----
+
 PatchGAN es un tipo de discriminador para redes antagónicas generativas que solo penaliza la estructura a escala de parches de imagen locales. El discriminador PatchGAN intenta clasificar si cada parche en una imagen es real o falso. Este discriminador se ejecuta de forma convolucional a través de la imagen, promediando todas las respuestas para proporcionar el resultado final. Dicho discriminador modela efectivamente la imagen como un campo aleatorio de Markov, suponiendo independencia entre píxeles separados por más de un diámetro de parche. Puede entenderse como un tipo de pérdida de textura/estilo(Papers with Code - PatchGAN Explained, n.d.), se puede ver la aquitecutra detallada en el anexo 8.6 Arquitectura Discriminador; sin embargo, el proceso que sigue en discriminador es el que se muestra en la siguiente figura:
  
 El discriminador es un clasificador PatchGAN convolucional que intenta clasificar si cada imagen parche es real o no, en donde:
@@ -104,7 +104,7 @@ El proceso es el siguiente:
 ![](resources/metrcis.jpg)	
 
 ## Evaluación general del modelo:
----
+
 La interpretación de los registros es más compleja y abstracta cuando se entrena una GAN (o una cGAN como pix2pix) respecto de otros modelos como clasificación o regresión. Debido a que se busca el equilibrio en la red según la teoría de Nashm se puede comprobar que ni el generador ni el discriminador han "ganado".
 -	Debido a que gen_gan_loss o disc_loss son muy altos, es un indicador que el modelo combinado está entrenando correctamente.
 -	El valor log(3) = 0,47 es un buen punto de referencia las pérdidas, ya que indica una perplejidad de 3: el discriminador, en promedio, tiene la misma incertidumbre sobre las dos opciones.
